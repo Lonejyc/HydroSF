@@ -1,0 +1,9 @@
+.img_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &.invert {
+        flex-direction: row-reverse;
+    }
+}
