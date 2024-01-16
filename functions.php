@@ -24,6 +24,16 @@ function load_scripts_and_style()
   ));
 }
 
+function p($args){
+  var_dump($args);
+}
+
+
+function d($args){
+  p($args);
+  die();
+}
+
 //Add image size
 add_image_size('home-img', 648, 800, array('center', 'center'));
 add_image_size('art-img', 365, 208, array('center', 'center'));

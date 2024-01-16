@@ -34,9 +34,6 @@
         </div>
         <nav class="nav">
           <?php wp_nav_menu(array('menu' => 'Menu')); ?>
-          <ul>
-            <li><a href="" class="btn don">FAIRE UN DON</a></li>
-          </ul>
         </nav>
       </div>
     </header>

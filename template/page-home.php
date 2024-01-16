@@ -78,7 +78,7 @@
                 ?>
                 <article class="carousel-cell art">
                     <img 
-                        loading="lazy" 
+                        loading="lazy"
                         src="<?php echo ($featured_img['sizes']['art-img']); ?>"
                         width="<?php echo ($featured_img['sizes']['art-img-width']); ?>"
                         height="<?php echo ($featured_img['sizes']['art-img-height']); ?>"

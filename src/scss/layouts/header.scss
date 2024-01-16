@@ -1,13 +1,15 @@
-$primary-color: hsl(204, 86%, 53%);
+$primary-color: hsl(206, 79%, 41%);
 
 header{
+    display: flex;
+    justify-content: center;
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: 1312px;
+        width: 100%;
     }
-
     nav{
         display: flex;
         justify-content: space-between;
@@ -20,12 +22,22 @@ header{
             justify-content: space-between;
             align-items: center;
             list-style: none;
-
+            gap: 20px;
             li{
                 align-items: center;
-                width: 100%;
                 cursor: pointer;
-
+                &:nth-child(5){
+                    border-radius: 8px;
+                    background-color: $primary-color;
+                    padding-inline: 24px;
+                    padding-block: 16px;
+                    &:hover {
+                        background-color: hsla(206, 79%, 41%, 0.8);
+                    }
+                    a {
+                        color: white;
+                    }
+                }
                 a{
                     text-decoration: none;
                     color: $primary-color;
