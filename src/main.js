@@ -2,7 +2,8 @@
 __webpack_public_path__ = window.WP.publicPath; // WP.publicPath come from functions.php
 
 import './main.scss'
-import './js/slider'
+import Flickity from 'flickity'
+import 'flickity/dist/flickity.min.css'
 import Router from './utils/Router'
 
 // Small router inspired from Sage framework, which use body class from WordPress

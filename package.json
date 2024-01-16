@@ -42,7 +42,6 @@
     "webpack-notifier": "^1.15.0"
   },
   "dependencies": {
-    "@splidejs/splide": "^4.1.4",
-    "keen-slider": "^6.8.6"
+    "flickity": "^3.0.0"
   }
 }

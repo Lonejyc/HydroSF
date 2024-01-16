@@ -15,7 +15,7 @@
 
     $args = array(
         'post_type' => 'post',
-        'posts_per_page' => 3
+        'posts_per_page' => -1
     );
     $query = new WP_Query( $args );
     $articles = $query->posts;
@@ -27,7 +27,7 @@
         <div class="container">
             <div class="imgs-hover"></div>
             <p class="description"><?php echo $intro_txt ?></p>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Goutte.svg" alt="Goutte d'eau">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">
         </div>
     </section>
     <section class="about">
@@ -70,14 +70,13 @@
     </section>
     <section class="now">
         <h2 class="h2">En ce moment</h2>
-        <div id="my-keen-slider" class="keen-slider">
-            <div class="keen-slider__slide number-slide1">
+        <div class="main-carousel" data-flickity='{ "groupCells": true }'>
             <?php foreach ($articles as $article) : ?>
                 <?php 
                     $featured_img = get_field('featured_img', $article->ID);
                     $short_description = get_field('short_description', $article->ID);
                 ?>
-                <article class="art">
+                <article class="carousel-cell art">
                     <img 
                         loading="lazy" 
                         src="<?php echo ($featured_img['sizes']['art-img']); ?>"
@@ -90,13 +89,8 @@
                         <div class="paragraph"><?php echo $short_description; ?></div>
                         <a href="<?php echo get_permalink($article->ID); ?>" class="btn outline-btn">EN SAVOIR PLUS</a>
                     </div>
-                </article>
+                </article> 
             <?php endforeach; ?>
-            </div>
-            <div class="keen-slider__slide number-slide2">                
-            </div>
-            <div class="keen-slider__slide number-slide3">
-            </div>
         </div>
     </section>
     <section class="needu" style="background-image: url(<?php echo ($needu_background_img['sizes']['home-background-img']); ?>)">
