@@ -1,0 +1,21 @@
+$primary: hsla(206, 79%, 41%);
+.btn {
+    font: 600 12px Inter;
+    border-radius: 8px;
+    background-color: $primary;
+    padding-inline: 24px;
+    padding-block: 16px;
+    &:hover {
+        background-color: hsla(206, 79%, 41%, 0.8);
+    }
+}
+
+.outline-btn {
+    font: 600 12px Inter;
+    background-color: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+    &:hover {
+        background-color: $primary;
+    }
+}

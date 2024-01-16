@@ -1,0 +1,31 @@
+@import "scss/_reset";
+@import "scss/_styleguide";
+@import "scss/_fonts";
+@import "scss/layouts/footer";
+@import "scss/layouts/header";
+@import "scss/components/button";
+@import "scss/components/input";
+@import "scss/pages/home";
+
+$primary-color: hsla(206, 79%, 41%);
+$font-color: hsl(0, 0%, 100%);
+
+.main{
+  background-color: $font-color;
+}
+
+.h1 {
+  font: 700 64px Inter;
+}
+
+.h2 {
+  font: 600 32px Inter;
+}
+
+.h3 {
+  font: 500 24px Inter;
+}
+
+p {
+  font: 400 16px Lato;
+}

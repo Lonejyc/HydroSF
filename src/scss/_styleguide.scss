@@ -1,0 +1,213 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.sg-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.sg-head > .heading {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sg-label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.h2,
+.h3,
+.h4,
+.h5 {
+    font-weight: 600;
+}
+
+.h2 {
+    font-size: 2.3rem;
+}
+
+.h3 {
+    font-size: 2rem;
+}
+
+.h4 {
+    font-size: 1.5rem;
+}
+
+.h5 {
+    font-size: 1rem;
+}
+
+.sg-label{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: hsl(0, 0%, 45%);
+}
+
+.sg-block {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    max-width: 50vw;
+}
+
+.large {
+    font-size: 1.5rem;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+.list {
+    padding-left: 2.5rem;
+    list-style: disc;
+
+    li {
+        margin-bottom: 0.25rem;
+    }
+}
+
+.link {
+    color: hsl(223, 86%, 57%);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.sg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 2.5rem;
+    border-radius: 1.5rem;
+    background-color: hsl(223, 86%, 57%);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+        background-color: hsl(223, 86%, 47%);
+    }
+
+    &.submit {
+        padding: 0.5rem;
+        width: 120px;
+        border: none;
+        outline: none;
+    }
+}
+
+.secondary-btn {
+    background-color: 	hsl(209, 100%, 91%);
+    color: hsl(223, 86%, 57%);
+    font-weight: 500;
+
+    &:hover {
+        background-color: 	hsl(209, 100%, 83%);
+    }
+}
+
+.outline-btn {
+    background-color: transparent;
+    border: 1px solid hsl(223, 86%, 57%);
+    color: hsl(223, 86%, 57%);
+    font-weight: 500;
+
+    &:hover {
+        background-color: hsl(223, 86%, 57%);
+        color: white;
+    }
+}
+
+.grey-btn {
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 35%);
+    font-weight: 500;
+
+    &:hover {
+        background-color: hsl(0, 0%, 75%);
+        color: hsl(0, 0%, 20%);
+    }
+}
+
+.disable-btn {
+    background-color: hsl(224, 100%, 88%);
+    font-weight: 500;
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: hsl(224, 100%, 88%);
+    }
+}
+
+.sg-field-block {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    &.row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.input {
+    width: 40vw;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(0, 0%, 80%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    transition: border-color 0.2s ease-out;
+
+    &::placeholder {
+        color: hsl(0, 0%, 60%);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: hsl(223, 86%, 57%);
+    }
+}
+
+.textarea {
+    resize: none;
+}
+
+.checkbox,
+.radio {
+    margin-right: 0.5rem;
+}
