@@ -110,7 +110,7 @@
                 <h2 class="h2"><?php echo $demand_title; ?></h2>
                 <a href="#form" class="btn">FAIRE MA DEMANDE</a>
                 <h2 class="h2"><?php echo $community_title; ?></h2>
-                <a href="<?php echo $form_link['url']; ?>" class="btn outline-btn" download>TÉLÉCHRGER LE FORMULAIRE</a>
+                <a href="<?php echo $form_link['url']; ?>" class="btn outline-btn" download>TÉLÉCHARGER LE FORMULAIRE</a>
             </div>
         </article>
     </section>

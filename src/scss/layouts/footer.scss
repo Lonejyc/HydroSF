@@ -1,0 +1,122 @@
+footer {
+    width: 100%;
+    display: flex;
+    background-color: #0D74B6;
+}
+
+.footer-left {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.footer-logo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-left img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-mid {
+    padding-top: 60px;
+    height: auto;
+    position: relative;
+}
+
+.footer-mid .footer-copyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-mid ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.footer-mid ul li {
+    margin-bottom: 32px;
+    font: 400 12px 'inter' ;
+    color: white;
+}
+
+.footer-copyright {
+    font: 100 8px 'inter' ;
+    color: white;
+}
+
+.footer-right {
+    text-align: center;
+    padding-right: 108px;
+    margin-left: auto;
+    margin-top: auto;
+    width: fit-content;
+}
+
+.footer-right .footer-newsletter {
+    margin-bottom: 88px;
+}
+
+.footer-right .footer-newsletter form {
+    width: fit-content;
+    display: flex;
+}
+
+.footer-right .footer-newsletter input {
+    padding-top: 15px ;
+    padding-bottom: 15px ;
+    padding-left: 15px;
+    width: 300px;
+    margin: 0;
+    color: black;
+    background-color: white;
+    border: none;
+    font: 100 12px 'inter' ;
+}
+
+.footer-right .footer-newsletter input:focus {
+    outline: none;
+}
+
+.footer-right .footer-newsletter input::placeholder {
+    color: #848484;
+}
+
+.footer-right .footer-newsletter button {
+    padding: 12px;
+    margin: 0;
+    color: white;
+    border: 3px solid;
+    background-color: transparent;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    font: 400 12px 'inter' ;
+}
+
+h4 {
+    font: 400 20px 'inter' ;
+    color: white;
+}
+
+.footer-right .footer-socials {
+    background-color: white;
+    width: fit-content;
+    padding: 19px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-social-icon {
+    margin-right: 40px;
+}
+
+.vl {
+    margin-left: 30px;
+    margin-right: 108px;
+    border-left: 1px solid white;
+    height: auto;
+}
