@@ -46,9 +46,7 @@
                 width: 2px;
                 height: 16px;
                 background-color:hsl(0, 0%, 0%);
-                transform-origin: 4px 3px;
                 transform: translate(-50%, -50%);
-                transition: ease-in-out .5s;
             } 
         }
     }
@@ -70,11 +68,11 @@
 
 .coord.active .prim .plus {
     border: 2px solid hsl(206, 79%, 41%);
+    transform: rotate(-45deg);
     &:before {
         background-color: hsl(206, 79%, 41%);
     }
     &:after {
         background-color: hsl(206, 79%, 41%);
-        transform: rotate(90deg);
     }
 }
