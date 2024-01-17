@@ -74,6 +74,12 @@
             font-family: 'Hammersmith One';
         }
     }
+
+    .flickity-button {
+        &:focus, &:active {
+            box-shadow: none;
+        }
+    }
     .flickity-page-dot {
         width: 22px;
         height: 32px;
@@ -84,10 +90,10 @@
             background: transparent;
             background-image: url(../images/Droplet.svg);
         }
-    }
-
-
-    
+        &:focus, &:active {
+            box-shadow: none;
+        }
+    }    
 }
 
 .needu{
