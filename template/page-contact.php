@@ -10,31 +10,41 @@
         $message = $_POST['message'];
         wp_mail('jocelyn.marcilloux@gmail.com', 'Mail test', $message);
     }
+
+    $mail = get_field('mail');
+    $repetor = get_field('repetor');
 ?>
 
 <main>
     <section class="contact-infos">
         <div class="mail-info">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail.svg" alt="Email">
-            <p>contact@hydrauliquesansfrontières.org</p>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Mail.svg" alt="Email">
+            <p><?php echo $mail ?></p>
         </div>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">
+        <?php foreach($repetor as $row) : ?>
+        <?php
+            $title = $row['title'];
+            $tel = $row['tel'];
+            $loc = $row['loc'];
+        ?>
         <div class="coord">
             <div class="prim">
-                <h3 class="h3">Siège social Chambéry</h3>
+                <h3 class="h3"><?php echo $title ?></h3>
                 <button class="plus"></button>
             </div>
             <div class="sec">
                 <div class="tel">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Phone.svg" alt="Téléphone">
-                    <p>07 67 46 21 05</p>
+                    <p><?php echo $tel ?></p>
                 </div>
                 <div class="loc">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Location.svg" alt="Localisation">
-                    <p>2 rue de la République - 73000 Chambéry</p>
+                    <p><?php echo $loc ?></p>
                 </div>
             </div>
         </div>
+        <?php endforeach; ?>
     </section>
     <section>
         <h1>Contact</h1>
