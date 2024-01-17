@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    .art {
+        grid-column: auto/span 4;
+    }
+}
