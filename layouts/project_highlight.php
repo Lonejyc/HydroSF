@@ -7,11 +7,6 @@
     <h2 class="h2"><?php echo $title ?></h2>
     <?php foreach($repetor as $row) : ?>
     <?php
-        // $img = get_field('img', $row->ID);
-        // $title = get_field('title', $row->ID);
-        // $description = get_field('description', $row->ID);
-        // $project_link = get_field('project_link', $row->ID);
-        // $helloasso_link = get_field('helloasso_link', $row->ID);
         $img = $row['img'];
         $title = $row['title'];
         $description = $row['description'];
