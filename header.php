@@ -15,9 +15,11 @@
   <body>
     <header>
       <div class="container">
-        <a href="<?php echo get_site_url(); ?>" class="logo">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/LogoHSF.png" alt="Logo Hydraulique Sans Frontière">
-        </a>
+        <div class="logo">
+          <a href="<?php echo get_site_url(); ?>" class="logo-img">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/LogoHSF.png" alt="Logo Hydraulique Sans Frontière">
+          </a>
+        </div>
         <div class="medias">
           <a href="https://www.facebook.com/hydrauliquesansfrontieres/" target="_blank" class="media">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Facebook.svg" alt="Facebook">
@@ -36,4 +38,24 @@
           <?php wp_nav_menu(array('menu' => 'Menu')); ?>
         </nav>
       </div>
+      <?php if(!is_front_page()) : ?>
+      <div class="header-bot">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/motif-header.svg" alt="Motif pour le header">
+        <nav class="breadcrumb">
+          <?php
+            $ancestors = array_reverse(get_post_ancestors($post->ID));
+          ?>
+          <a href="<?php echo get_site_url(); ?>">ACCUEIL</a>
+          <?php foreach($ancestors as $ancestor): ?>
+            <?php $ancestor_post = get_post($ancestor); ?>
+            <span>></span>
+            <a href="<?php echo(get_permalink($ancestor_post->ID)); ?>"><?php echo($ancestor_post->post_title); ?></a>
+          <?php endforeach; ?>
+          <span>></span>
+          <a href=""><?php echo($post->post_title); ?></a>
+        </nav>
+        <h1 class="h1"><?php the_title(); ?></h1>
+        <div class="headband"></div>
+      </div>
+      <?php endif; ?>
     </header>

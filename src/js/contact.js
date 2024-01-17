@@ -15,5 +15,3 @@ blocksEl.forEach((blockEl) => {
         }
     });
 });
-
-
