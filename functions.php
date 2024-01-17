@@ -38,4 +38,6 @@ function d($args){
 add_image_size('home-img', 648, 800, array('center', 'center'));
 add_image_size('art-img', 365, 208, array('center', 'center'));
 add_image_size('art-img-full', 648, 853, array('center', 'center'));
+add_image_size('art-img-max', 1920, 1080, array('center', 'center'));
+add_image_size('art-img-banner', 1312, 302, array('center', 'center'));
 add_image_size('home-background-img', 1440, 600, array('center', 'center'));
