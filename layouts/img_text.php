@@ -5,7 +5,7 @@
     $btn_link = $flex_content["btn_link"];
     $btn_txt = $flex_content["btn_txt"];
     $layout = $flex_content["layout"];
-    $var = ($layout == 'img_right') ? 'invert' : '';
+    $var = $layout == 'img_right' ? 'invert' : '';
 ?>
 
 <article class="img_text <?php echo (isset($var)) ? $var : ''; ?>">
