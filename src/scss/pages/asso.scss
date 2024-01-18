@@ -1,3 +1,83 @@
 .text-x2 {
     display: flex;
+    padding: 128px;
+    article {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .h2 {
+            margin-bottom: 48px;
+        }
+        .paragraph {
+            font: 400 16px Lato;
+            margin-bottom: 32px;
+        }
+    &:not(:first-child) {
+        margin-left: 64px;
+        padding-left: 64px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(22,116,187,1) 100%);
+            width: 2px;
+            height: 100%;
+        }
+    }
+    }
+}
+
+.orga {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 64px;
+    .h2 {
+        margin-bottom: 16px;
+    }
+    .img {
+        height: 100%;
+        align-self: center;
+    }
+}
+
+.guide {
+    margin-block: 128px;
+    .left > img {
+    object-fit: contain;
+    }
+}
+
+.bot {
+    .title {
+        display: flex;
+        position: relative;
+        gap: 32px;
+        padding-left: 128px;
+        margin-bottom: 64px;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background-color: hsla(206, 79%, 41%, 0.2);
+            width: 30%;
+            height: 32px;
+        }
+    }
+    .paragraph {
+        padding-inline: 64px;
+    }
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    margin-block: 48px;
+    max-width: 90%;
+    align-items: center;
+    justify-items: center;
 }

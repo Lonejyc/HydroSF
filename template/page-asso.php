@@ -44,32 +44,31 @@
             </div>
         </article>
     </section>
-    <section>
-        <article class="text-x2">
+    <section class="text-x2">
+        <article>
             <h2 class="h2"><?php echo $left_title; ?></h2>
             <div class="paragraph"><?php echo $left_paragraph; ?></div>
         </article>
-        <div class="bar"></div>
         <article>
             <h2 class="h2"><?php echo $right_title; ?></h2>
             <div class="paragraph"><?php echo $right_paragraph; ?></div>
         </article>
     </section>
     <section>
-        <article>
+        <article class="orga">
             <h2 class="h2"><?php echo $orga_title; ?></h2>
             <div class="paragraph"><?php echo $orga_paragraph; ?></div>
-            <img 
+            <img class="img"
                 loading="lazy" 
-                src="<?php echo ($orga_img['sizes']['home-img']); ?>"
-                width="<?php echo ($orga_img['sizes']['home-img-width']); ?>"
-                height="<?php echo ($orga_img['sizes']['home-img-height']); ?>"
+                src="<?php echo ($orga_img['sizes']['art-img-max']); ?>"
+                width="<?php echo ($orga_img['sizes']['art-img-max-width']); ?>"
+                height="<?php echo ($orga_img['sizes']['art-img-max-height']); ?>"
                 alt="<?php echo $orga_img['alt']; ?>"
             >
         </article>
     </section>
     <section>
-        <article class="guide">
+        <article class="guide img_text">
             <div class="left">
                 <img 
                 loading="lazy" 
@@ -88,7 +87,7 @@
             </div>
         </article>
     </section>
-    <section>
+    <section class="bot">
         <div class="title">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">
             <h2 class="h2"><?php echo $partner_title; ?></h2>
