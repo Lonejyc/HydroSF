@@ -13,10 +13,10 @@
     $proj_page_link = get_field('proj_page_link');
     $needu_background_img = get_field('needu_background_img');
 
-    $args = array(
+    $args = [
         'post_type' => 'post',
         'posts_per_page' => -1
-    );
+    ];
     $query = new WP_Query( $args );
     $articles = $query->posts;
 ?>
@@ -27,7 +27,9 @@
         <div class="container">
             <div class="imgs-hover"></div>
             <p class="description"><?php echo $intro_txt ?></p>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">
+            <div class="img">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">
+            </div>
         </div>
     </section>
     <section class="about">
@@ -95,7 +97,9 @@
     </section>
     <section class="needu" style="background-image: url(<?php echo ($needu_background_img['sizes']['home-background-img']); ?>)">
         <h1 class="h1">ON A BESOIN DE VOUS !</h1>
-        <a href="#" class="btn">FAIRE UN DON</a>
+        <div class="button">
+            <a href="<?php echo get_page_link(ID_PAGE_DON); ?>" class="btn">FAIRE UN DON</a>
+        </div>
     </section>
 </main>
 

@@ -10,7 +10,7 @@
     $articles = $query->posts;
 ?>
 <main>
-    <section class="container">
+    <section class="container-grid">
         <?php foreach ($articles as $article) : ?>
             <?php 
                 $featured_img = get_field('featured_img', $article->ID);

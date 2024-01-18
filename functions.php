@@ -34,6 +34,13 @@ function d($args){
   die();
 }
 
+define('ID_PAGE_DON', 116);
+define('ID_PAGE_ACTU', 18);
+define('ID_PAGE_ASSO', 14);
+define('ID_PAGE_CONTACT', 20);
+define('ID_PAGE_HOME', 11);
+define('ID_PAGE_PROJECT', 16);
+
 //Add image size
 add_image_size('home-img', 648, 800, array('center', 'center'));
 add_image_size('art-img', 365, 208, array('center', 'center'));

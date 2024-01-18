@@ -26,7 +26,7 @@
 ?>
 <main>
     <section>
-        <article class="asso">
+        <article class="asso img_text invert">
             <div class="left">
             <img 
                 loading="lazy" 
@@ -45,7 +45,7 @@
         </article>
     </section>
     <section>
-        <article>
+        <article class="text-x2">
             <h2 class="h2"><?php echo $left_title; ?></h2>
             <div class="paragraph"><?php echo $left_paragraph; ?></div>
         </article>
