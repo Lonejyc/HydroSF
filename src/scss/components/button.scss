@@ -1,6 +1,8 @@
 $primary: hsla(206, 79%, 41%);
 .btn {
     font: 600 12px Inter;
+    width: fit-content;
+    border: none;
     border-radius: 8px;
     background-color: $primary;
     padding-inline: 24px;

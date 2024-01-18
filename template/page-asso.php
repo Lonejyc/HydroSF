@@ -84,7 +84,7 @@
                 <div class="paragraph">
                     <?php echo $guide_paragraph ?>
                 </div>
-                <a href="<?php echo $guide_link ?>" class="btn">EN SAVOIR PLUS</a>
+                <a href="<?php echo $guide_link ?>" class="btn">COMMANDER</a>
             </div>
         </article>
     </section>

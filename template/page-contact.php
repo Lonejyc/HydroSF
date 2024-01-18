@@ -92,7 +92,7 @@
                 <label for=""></label>
                 <input type="text-area" name="message" placeholder="VOS MOTIVATIONS..." required>
             </fieldset>
-            <button class="btn" name="submit">Envoyer</button>
+            <button class="btn" name="submit">ENVOYER</button>
         </form>
     </section>
     <section>
