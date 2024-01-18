@@ -7,7 +7,7 @@
   </div>
   <div class="vl"></div>
   <nav class="footer-mid">
-    <?php wp_nav_menu(array('menu' => 'Menu')); ?>
+    <?php wp_nav_menu(array('menu' => 'Menu-footer')); ?>
     <p class="footer-copyright">© Hydraulique sans frontières 2024</p>
   </nav>
   <div class="footer-right">
