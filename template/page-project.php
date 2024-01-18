@@ -3,7 +3,7 @@
     get_header();
 
     $progress_articles = get_posts([
-        'posts_per_page'    => -1,
+        'posts_per_page'    => 3,
         'post_type'     => 'post',
         'meta_key'      => 'state',
         'meta_value'    => 'in_progress'
@@ -15,7 +15,7 @@
     $proj_link = get_field('proj_link');
 
     $finished_articles = get_posts([
-        'posts_per_page'    => -1,
+        'posts_per_page'    => 3,
         'post_type'     => 'post',
         'meta_key'      => 'state',
         'meta_value'    => 'finished'
@@ -23,7 +23,7 @@
 
 ?>
 <main>
-    <section class="now">
+    <section class="now spe">
         <h2 class="h2">Ces projets ont besoin de vous !</h2>
         <div class="main-carousel">
             <?php foreach ($progress_articles as $p_article) : ?>
@@ -53,8 +53,8 @@
         </div>
     </section>
     <section>
-        <article class="img_text">
-            <div class="img">
+        <article class="proj img_text">
+            <div class="left">
                 <img 
                     loading="lazy"
                     src="<?php echo ($proj_img['sizes']['art-img-full']); ?>"
@@ -63,14 +63,14 @@
                     alt="<?php echo $proj_img['alt']; ?>"
                 >
             </div>
-            <div class="content">
+            <div class="right">
                 <h2 class="h2"><?php echo $proj_title; ?></h2>
                 <div class="paragraph"><?php echo $proj_paragaph; ?></div>
                 <a href="<?php echo $proj_link; ?>" class="btn outline-btn">NOUS CONTACTER</a>
             </div>
         </article>
     </section>
-    <section class="now">
+    <section class="now spe">
         <h2 class="h2">Projets terminés</h2>
         <div class="main-carousel">
             <?php foreach ($finished_articles as $f_article) : ?>

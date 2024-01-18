@@ -1,0 +1,23 @@
+.spe .h2 {
+    margin-block: 32px 0;
+}
+
+.main-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 128px;
+    .carousel-cell .buttons {
+        display: flex;
+        justify-content: space-between;
+        .btn:last-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            > img {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
