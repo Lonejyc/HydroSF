@@ -20,7 +20,7 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/LogoHSF.png" alt="Logo Hydraulique Sans Frontière">
           </a>
         </div>
-        <div class="medias">
+        <nav class="medias">
           <a href="https://www.facebook.com/hydrauliquesansfrontieres/" target="_blank" class="media">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Facebook.svg" alt="Facebook">
           </a>
@@ -33,7 +33,7 @@
           <a href="https://www.youtube.com/channel/UCZQX6Z6Z2X6Z6Z2X6Z6Z2Xw" target="_blank" class="media">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Youtube.svg" alt="Youtube">
           </a>
-        </div>
+        </nav>
         <nav class="nav">
           <?php wp_nav_menu(array('menu' => 'Menu')); ?>
         </nav>
