@@ -1,14 +1,11 @@
 <?php 
     $img = $flex_content["img"];
     $title = $flex_content["title"];
-    $paragraph = $flex_content["paragraph"];
-    $btn_link = $flex_content["btn_link"];
-    $btn_txt = $flex_content["btn_txt"];
-    $layout = $flex_content["layout"];
-    $var = $layout == 'img_right' ? 'invert' : '';
+    $left_paragraph = $flex_content["left_paragraph"];
+    $right_paragraph = $flex_content["right_paragraph"];
 ?>
 
-<article class="img_text <?php echo (isset($var)) ? $var : ''; ?>">
+<article class="img_text block">
     <div class="img">
         <img 
             loading="lazy"
@@ -20,7 +17,9 @@
     </div>
     <div class="content">
         <h2 class="h2"><?php echo $title; ?></h2>
-        <div class="paragraph"><?php echo $paragraph; ?></div>
-        <a href="<?php echo $btn_link; ?>" class="btn outline-btn"><?php echo $btn_txt; ?></a>
+        <div>
+            <div class="paragraph"><?php echo $left_paragraph; ?></div>
+            <div class="paragraph"><?php echo $right_paragraph; ?></div>
+        </div>
     </div>
 </article>

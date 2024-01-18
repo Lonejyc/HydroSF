@@ -1,0 +1,49 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    background-color: #1674BA;
+    padding: 50px 38px;
+    border-radius: 16px;
+    border: 2px solid #1674BA;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.70);
+    .h2 {
+        color: #FFF;
+        margin-bottom: 42px;
+    }
+    .outline-btn {
+        border-color: #fff;
+        color: #fff;
+        &:hover {
+            background-color: #fff;
+            color: #1674BA;
+            cursor: pointer;
+        }
+    }
+    .input {
+        padding-left: 19px;
+        padding-block: 18px;
+        margin-bottom: 48px;
+        border-radius: 8px;
+        width: 426px;
+        background: #FFF;
+        border: 1px solid #FFF;
+    
+        color: black;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    
+    input[type="text-area"].input {
+        border-radius: 8px;
+        padding-bottom: 100px;
+        padding-left: 19px;
+        padding-top: 18px;
+        width: 426px;
+    }
+}

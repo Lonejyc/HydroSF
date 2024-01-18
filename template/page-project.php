@@ -65,7 +65,7 @@
             </div>
             <div class="content">
                 <h2 class="h2"><?php echo $proj_title; ?></h2>
-                <p class="paragraph"><?php echo $proj_paragaph; ?></p>
+                <div class="paragraph"><?php echo $proj_paragaph; ?></div>
                 <a href="<?php echo $proj_link; ?>" class="btn outline-btn">NOUS CONTACTER</a>
             </div>
         </article>

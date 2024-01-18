@@ -76,11 +76,12 @@
     </section>
     <section>
         <form action="" method="post" id="form">
-            <input type="text" name="lastname" placeholder="NOM" required>
-            <input type="text" name="firstname" placeholder="PRÉNOM" required>
-            <input type="email" name="email" placeholder="EMAIL" required>
-            <input type="text-area" name="message" placeholder="VOS MOTIVATIONS..." required>
-            <button class="btn" name="submit">ENVOYER</button>
+            <h2 class="h2">SOUMETTEZ VOTRE CANDIDATURE !</h2>
+            <input class="input" type="text" name="lastname" placeholder="NOM" required>
+            <input class="input" type="text" name="firstname" placeholder="PRÉNOM" required>
+            <input class="input" type="email" name="email" placeholder="EMAIL" required>
+            <input class="input" type="text-area" name="message" placeholder="VOS MOTIVATIONS..." required>
+            <button class="btn outline-btn" name="submit">ENVOYER</button>
         </form>
     </section>
     <section>

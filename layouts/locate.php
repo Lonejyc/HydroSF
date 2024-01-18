@@ -14,7 +14,7 @@
         alt="<?php echo $background_img['alt']; ?>"
     >
     <div class="content">
-        <p class="chapo"><?php echo $quote ?></p>
+        <div class="chapo"><?php echo $quote ?></div>
         <h2 class="h2"><?php echo $location_title ?></h2>
         <img 
             loading="lazy" 
