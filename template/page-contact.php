@@ -76,22 +76,10 @@
     </section>
     <section>
         <form action="" method="post" id="form">
-            <fieldset>
-                <label for=""></label>
-                <input type="text" name="lastname" placeholder="NOM" required>
-            </fieldset>
-            <fieldset>
-                <label for=""></label>
-                <input type="text" name="firstname" placeholder="PRÉNOM" required>
-            </fieldset>
-            <fieldset>
-                <label for=""></label>
-                <input type="email" name="email" placeholder="EMAIL" required>
-            </fieldset>
-            <fieldset>
-                <label for=""></label>
-                <input type="text-area" name="message" placeholder="VOS MOTIVATIONS..." required>
-            </fieldset>
+            <input type="text" name="lastname" placeholder="NOM" required>
+            <input type="text" name="firstname" placeholder="PRÉNOM" required>
+            <input type="email" name="email" placeholder="EMAIL" required>
+            <input type="text-area" name="message" placeholder="VOS MOTIVATIONS..." required>
             <button class="btn" name="submit">ENVOYER</button>
         </form>
     </section>
