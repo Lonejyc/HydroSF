@@ -7,6 +7,7 @@ $primary: hsla(206, 79%, 41%);
     background-color: $primary;
     padding-inline: 24px;
     padding-block: 16px;
+    transition: cubic-bezier(.17,.73,.27,1) .3s;
     &:hover {
         background-color: hsla(206, 79%, 41%, 0.8);
     }
@@ -17,6 +18,7 @@ $primary: hsla(206, 79%, 41%);
     background-color: transparent;
     color: $primary;
     border: 2px solid $primary;
+    transition: cubic-bezier(.17,.73,.27,1) .3s;
     &:hover {
         background-color: $primary;
     }

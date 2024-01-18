@@ -8,6 +8,7 @@
     );
     $query = new WP_Query( $args );
     $articles = $query->posts;
+
 ?>
 <main>
     <section class="container-grid">
@@ -17,7 +18,7 @@
                 $short_description = get_field('short_description', $article->ID);
             ?>
             <article class="art">
-                <img 
+                <img class="img"
                     loading="lazy"
                     src="<?php echo ($featured_img['sizes']['art-img']); ?>"
                     width="<?php echo ($featured_img['sizes']['art-img-width']); ?>"

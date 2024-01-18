@@ -1,22 +1,39 @@
-.spe .h2 {
-    margin-block: 32px 0;
+.spe {
+    margin-bottom: 128px;
 }
 
-.main-carousel {
+.projects-show {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-inline: 128px;
-    .carousel-cell .buttons {
+    gap: 50px;
+    .project-show {
         display: flex;
-        justify-content: space-between;
-        .btn:last-child {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 24px;
+        }
+        .h3 {
+            margin-bottom: 4px;
+        }
+        .buttons {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            > img {
-                margin-bottom: 0;
+            justify-content: space-between;
+            .btn:last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                > img {
+                    margin-bottom: 0;
+                }
             }
         }
     }

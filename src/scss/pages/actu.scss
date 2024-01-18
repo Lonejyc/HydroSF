@@ -1,9 +1,24 @@
 .container-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 50px;
-    row-gap: 50px;
+    gap: 50px;
+    padding-inline: 128px;
+    margin-bottom: 128px;
     .art {
         grid-column: auto/span 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 24px;
+        }
+        .h3 {
+            margin-bottom: 4px;
+        }
     }
 }

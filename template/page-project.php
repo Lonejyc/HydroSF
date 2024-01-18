@@ -23,17 +23,17 @@
 
 ?>
 <main>
-    <section class="now spe">
+    <section class="now">
         <h2 class="h2">Ces projets ont besoin de vous !</h2>
-        <div class="main-carousel">
+        <div class="projects-show">
             <?php foreach ($progress_articles as $p_article) : ?>
                 <?php 
                     $featured_img = get_field('featured_img', $p_article->ID);
                     $short_description = get_field('short_description', $p_article->ID);
                     $helloasso_link = get_field('helloasso_link', $p_article->ID);
                 ?>
-                <article class="carousel-cell art">
-                    <img  
+                <article class="project-show art">
+                    <img class="img"
                         loading="lazy"
                         src="<?php echo ($featured_img['sizes']['art-img']); ?>"
                         width="<?php echo ($featured_img['sizes']['art-img-width']); ?>"
@@ -72,14 +72,14 @@
     </section>
     <section class="now spe">
         <h2 class="h2">Projets terminés</h2>
-        <div class="main-carousel">
+        <div class="projects-show">
             <?php foreach ($finished_articles as $f_article) : ?>
                 <?php
                     $featured_img_f = get_field('featured_img', $f_article->ID);
                     $short_description_f = get_field('short_description', $f_article->ID);
                 ?>
-                <article class="carousel-cell art">
-                    <img
+                <article class="project-show art">
+                    <img class="img"
                         loading="lazy"
                         src="<?php echo ($featured_img_f['sizes']['art-img']); ?>"
                         width="<?php echo ($featured_img_f['sizes']['art-img-width']); ?>"
