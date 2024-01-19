@@ -63,9 +63,7 @@ header{
                     a{
                         text-decoration: none;
                         color: $primary-color;
-                        font-size: 14px;
-                        font-family: Inter;
-                        font-weight: 600;
+                        font: 600 0.875rem Inter;
                         transition: color 0.3s ease-in-out;
                     }
                 }
@@ -94,9 +92,7 @@ header{
         gap: 10px;
         margin-top: 40px;
         padding-left: 10%;
-        font-size: 12px;
-        font-family: Lato;
-        font-weight: 400;
+        font: 400 0.75rem Lato;
         color: $primary-color;
         a {
             text-decoration: none;

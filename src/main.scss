@@ -5,7 +5,6 @@
 @import "scss/layouts/header";
 @import "scss/layouts/img_text";
 @import "scss/components/button";
-@import "scss/components/input";
 @import "scss/components/form";
 @import "scss/pages/home";
 @import "scss/pages/contact";
@@ -21,17 +20,17 @@ $font-color: hsl(0, 0%, 100%);
 }
 
 .h1 {
-  font: 700 64px Inter;
+  font: 700 4rem Inter;
 }
 
 .h2 {
-  font: 600 32px Inter;
+  font: 600 2rem Inter;
 }
 
 .h3 {
-  font: 500 24px Inter;
+  font: 500 1.5rem Inter;
 }
 
 p {
-  font: 400 16px Lato;
+  font: 400 1rem Lato;
 }

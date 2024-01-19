@@ -1,6 +1,6 @@
 $primary: hsla(206, 79%, 41%);
 .btn {
-    font: 600 12px Inter;
+    font: 600 0.75rem Inter;
     width: fit-content;
     border: none;
     border-radius: 8px;
@@ -14,7 +14,7 @@ $primary: hsla(206, 79%, 41%);
 }
 
 .outline-btn {
-    font: 600 12px Inter;
+    font: 600 0.75rem Inter;
     background-color: transparent;
     color: $primary;
     border: 2px solid $primary;
