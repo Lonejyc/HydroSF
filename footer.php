@@ -13,7 +13,7 @@
       <div class="footer-newsletter">
           <h4 class="h4">ABONNEZ-VOUS À NOTRE NEWSLETTER !</h4>
           <for class="form">
-              <input type="text" placeholder="VOTRE EMAIL ICI...">
+              <input type="text" placeholder="VOTRE EMAIL ICI..." class="input_">
               <button type="submit">S'ABONNER</button>
           </form>
       </div>
