@@ -3,6 +3,7 @@ __webpack_public_path__ = window.WP.publicPath; // WP.publicPath come from funct
 
 import './main.scss'
 import './js/contact'
+import './js/burger'
 import Flickity from 'flickity'
 import 'flickity/dist/flickity.min.css'
 import Router from './utils/Router'

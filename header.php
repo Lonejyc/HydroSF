@@ -34,9 +34,13 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Youtube.svg" alt="Youtube">
           </a>
         </nav>
-        <nav class="nav">
-          <?php wp_nav_menu(array('menu' => 'Menu')); ?>
-        </nav>
+        <?php wp_nav_menu(['menu' => 'Menu',
+        'container_class' => 'nav-menu',
+        'menu_class' => 'nav-menu-list'
+        ]); ?>
+        <div class="burger">
+          <span class="line"></span>
+        </div>
       </div>
       <?php if(!is_front_page()) : ?>
       <div class="header-bot">
