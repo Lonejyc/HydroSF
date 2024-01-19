@@ -3,17 +3,16 @@
     <a href="<?php echo get_site_url(); ?>" class="logo">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/LogoHSF.png" alt="Logo Hydraulique Sans Frontière" class="footer-logo">
     </a>
-    <p class="footer-copyright">Crédits : Jocelyn Marcilloux-Buisson - Johan Vuillerme - Théo Lefloch - Oscar Philippe</p>
+    <p class="copyright">Crédits : Jocelyn Marcilloux-Buisson - Johan Vuillerme - Théo Lefloch - Oscar Philippe</p>
   </div>
-  <div class="vl"></div>
   <nav class="footer-mid">
     <?php wp_nav_menu(array('menu' => 'Menu-footer')); ?>
-    <p class="footer-copyright">© Hydraulique sans frontières 2024</p>
+    <p class="copyright">© Hydraulique sans frontières 2024</p>
   </nav>
   <div class="footer-right">
       <div class="footer-newsletter">
-          <h4>ABONNEZ-VOUS À NOTRE NEWSLETTER !</h4>
-          <form>
+          <h4 class="h4">ABONNEZ-VOUS À NOTRE NEWSLETTER !</h4>
+          <for class="form">
               <input type="text" placeholder="VOTRE EMAIL ICI...">
               <button type="submit">S'ABONNER</button>
           </form>
