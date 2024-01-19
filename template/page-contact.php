@@ -19,6 +19,8 @@
         wp_mail('contact@hydrauliquesansfrontieres.org', 'Nouveau contact depuis le site', $name . 'vous contact depuis le formulaire de contact de votre site. Son E-Mail est : ' . $email . 'Voici son message : ' . $message);
     }
 
+    $img_form = get_field('img_form');
+
     $demand_title = get_field('demand_title');
     $community_title = get_field('community_title');
     $form_link = get_field('form_link');
@@ -31,7 +33,7 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Mail.svg" alt="Email">
             <p><?php echo $mail ?></p>
         </div>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">
+        <img class="img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">
         <?php foreach($repetor as $row) : ?>
         <?php
             $title_coord = $row['title'];
@@ -57,9 +59,9 @@
         <?php endforeach; ?>
     </section>
     <section>
-        <article class="img_text">
-            <div class="img">
-                <img 
+        <article class="img_text cont">
+            <div class="left">
+                <img class="img"
                     loading="lazy"
                     src="<?php echo ($img['sizes']['art-img-full']); ?>"
                     width="<?php echo ($img['sizes']['art-img-full-width']); ?>"
@@ -67,14 +69,21 @@
                     alt="<?php echo $img['alt']; ?>"
                 >
             </div>
-            <div class="content">
+            <div class="right">
                 <h2 class="h2"><?php echo $title; ?></h2>
                 <p class="paragraph"><?php echo $paragraph; ?></p>
                 <a href="#form" class="btn outline-btn">EN SAVOIR PLUS</a>
             </div>
         </article>
     </section>
-    <section>
+    <section class="_form">
+        <img class="img_form"
+            loading="lazy"
+            src="<?php echo ($img_form['sizes']['art-img-banner']); ?>"
+            width="<?php echo ($img_form['sizes']['art-img-banner-width']); ?>"
+            height="<?php echo ($img_form['sizes']['art-img-banner-height']); ?>"
+            alt="<?php echo $img_form['alt']; ?>"
+        >
         <form action="" method="post" id="form">
             <h2 class="h2">SOUMETTEZ VOTRE CANDIDATURE !</h2>
             <input class="input" type="text" name="lastname" placeholder="NOM" required>
@@ -85,9 +94,9 @@
         </form>
     </section>
     <section>
-        <article class="img_text invert">
-            <div class="img">
-                <img 
+        <article class="img_text cont invert">
+            <div class="left">
+                <img class="img"
                     loading="lazy"
                     src="<?php echo ($img_link['sizes']['art-img-full']); ?>"
                     width="<?php echo ($img_link['sizes']['art-img-full-width']); ?>"
@@ -95,7 +104,7 @@
                     alt="<?php echo $img_link['alt']; ?>"
                 >
             </div>
-            <div class="content">
+            <div class="right">
                 <h2 class="h2"><?php echo $demand_title; ?></h2>
                 <a href="#form" class="btn">FAIRE MA DEMANDE</a>
                 <h2 class="h2"><?php echo $community_title; ?></h2>
