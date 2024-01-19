@@ -32,10 +32,15 @@
     }
 }
 
+.don {
+    margin-block: 128px;
+}
+
 .asso, 
 .proj,
 .guide,
-.cont {
+.cont,
+.don {
     display: flex;
     justify-content: center;
     margin-inline: 64px;

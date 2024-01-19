@@ -3,7 +3,7 @@
     get_header();
 
     $progress_articles = get_posts([
-        'posts_per_page'    => -1,
+        'posts_per_page'    => 3,
         'post_type'     => 'post',
         'meta_key'      => 'state',
         'meta_value'    => 'in_progress'
@@ -18,15 +18,15 @@
 <main>
     <section class="now">
         <h2 class="h2">Ces projets ont besoin de vous !</h2>
-        <div class="main-carousel">
+        <div class="projects-show">
             <?php foreach ($progress_articles as $p_article) : ?>
                 <?php 
                     $featured_img = get_field('featured_img', $p_article->ID);
                     $short_description = get_field('short_description', $p_article->ID);
                     $helloasso_link = get_field('helloasso_link', $p_article->ID);
                 ?>
-                <article class="carousel-cell art">
-                    <img  
+                <article class="project-show art">
+                    <img class="img"
                         loading="lazy"
                         src="<?php echo ($featured_img['sizes']['art-img']); ?>"
                         width="<?php echo ($featured_img['sizes']['art-img-width']); ?>"
@@ -46,8 +46,8 @@
         </div>
     </section>
     <section>
-        <article class="img_text">
-            <div class="img">
+        <article class="img_text don">
+            <div class="left">
                 <img 
                     loading="lazy"
                     src="<?php echo ($img['sizes']['art-img-full']); ?>"
@@ -56,7 +56,7 @@
                     alt="<?php echo $img['alt']; ?>"
                 >
             </div>
-            <div class="content">
+            <div class="right">
                 <h2 class="h2"><?php echo $title; ?></h2>
                 <div class="paragraph"><?php echo $paragraph; ?></div>
                 <a href="<?php echo $link; ?>" class="btn outline-btn">J'ADHÈRE À HSF</a>
