@@ -5,12 +5,12 @@
     $location_img = $content["location_img"];
 ?>
 
-<article>
+<article class="locate">
     <img 
         loading="lazy" 
-        src="<?php echo ($background_img['sizes']['art-img']); ?>"
-        width="<?php echo ($background_img['sizes']['art-img-width']); ?>"
-        height="<?php echo ($background_img['sizes']['art-img-height']); ?>"
+        src="<?php echo ($background_img['sizes']['home-background-img']); ?>"
+        width="<?php echo ($background_img['sizes']['home-background-img-width']); ?>"
+        height="<?php echo ($background_img['sizes']['home-background-img-height']); ?>"
         alt="<?php echo $background_img['alt']; ?>"
     >
     <div class="content">
