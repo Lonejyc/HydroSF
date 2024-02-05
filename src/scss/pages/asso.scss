@@ -76,8 +76,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
-    margin-block: 48px;
     max-width: 90%;
     align-items: center;
     justify-items: center;
+    margin: 48px auto;
 }

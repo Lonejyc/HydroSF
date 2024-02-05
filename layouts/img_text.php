@@ -9,7 +9,7 @@
 ?>
 
 <article class="img_text <?php echo (isset($var)) ? $var : ''; ?>">
-    <div class="img">
+    <div class="left">
         <img 
             loading="lazy"
             src="<?php echo ($img['sizes']['art-img-full']); ?>"
@@ -18,7 +18,7 @@
             alt="<?php echo $img['alt']; ?>"
         >
     </div>
-    <div class="content">
+    <div class="right">
         <h2 class="h2"><?php echo $title; ?></h2>
         <div class="paragraph"><?php echo $paragraph; ?></div>
         <a href="<?php echo $btn_link; ?>" class="btn outline-btn"><?php echo $btn_txt; ?></a>

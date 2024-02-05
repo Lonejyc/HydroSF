@@ -1,7 +1,32 @@
 .img_text {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-inline: 64px;
+    gap: 16px;
     &.invert {
         flex-direction: row-reverse;
+    }
+    .left {
+        width: 50%;
+        > img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+    .right {
+        width: 50%;
+        background: hsl(0, 0%, 95%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+        border-radius: 16px;
+        padding: 64px;
+        box-sizing: border-box;
+        .paragraph {
+            font: 400 1rem Lato;
+        }
     }
 }
