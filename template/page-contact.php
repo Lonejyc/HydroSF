@@ -10,13 +10,16 @@
     $paragraph = get_field('paragraph');
 
     if(isset($_POST['submit']) && !empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['email']) && !empty($_POST['message'])) {
-        var_dump($_POST);
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
         $email = $_POST['email'];
         $name = $firstname . ' ' . $lastname;
         $message = $_POST['message'];
-        wp_mail('contact@hydrauliquesansfrontieres.org', 'Nouveau contact depuis le site', $name . 'vous contact depuis le formulaire de contact de votre site. Son E-Mail est : ' . $email . 'Voici son message : ' . $message);
+        if (wp_mail('jocelyn.marcilloux@gmail.com', 'Nouveau contact depuis le site', $name . ' vous contact depuis le formulaire de contact de votre site. Son E-Mail est : ' . $email . ' Voici son message : ' . $message)) {
+            $res = 'Email envoyé avec succès.';
+        } else {
+            $res = 'Erreur lors de l\'envoi de l\'email.';
+        }
     }
 
     $img_form = get_field('img_form');
@@ -29,6 +32,9 @@
 
 <main>
     <section class="contact-infos">
+        <?php if(isset($res)) : ?>
+            <p class="result"><?php echo $res ?></p>
+        <?php endif; ?>
         <div class="mail-info">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Mail.svg" alt="Email">
             <p><?php echo $mail ?></p>

@@ -15,12 +15,15 @@
     >
     <div class="content">
         <div class="chapo"><?php echo $quote ?></div>
-        <h2 class="h2"><?php echo $location_title ?></h2>
+        <div class="title">
+            <h2 class="h2"><?php echo $location_title ?></h2>
+            <div class="headband"></div>
+        </div>
         <img 
             loading="lazy" 
-            src="<?php echo ($location_img['sizes']['art-img']); ?>"
-            width="<?php echo ($location_img['sizes']['art-img-width']); ?>"
-            height="<?php echo ($location_img['sizes']['art-img-height']); ?>"
+            src="<?php echo ($location_img['sizes']['art-loc-img']); ?>"
+            width="<?php echo ($location_img['sizes']['art-loc-img-width']); ?>"
+            height="<?php echo ($location_img['sizes']['art-loc-img-height']); ?>"
             alt="<?php echo $location_img['alt']; ?>"
         >
     </div>
