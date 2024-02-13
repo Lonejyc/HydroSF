@@ -1,3 +1,9 @@
+@mixin m {
+    @media screen and (max-width: 767.98px) {
+        @content;
+    }
+}
+
 .contact-infos {
     display: flex;
     flex-direction: column;
@@ -24,6 +30,10 @@
     border-radius: 10px;
     border: 2px solid transparent;
     transition: ease-in-out 0.3s;
+    @include m{
+        width: 90%;
+        min-width: 200px;
+    }
     &.active {
         border: 2px solid hsl(206, 79%, 41%);
     }
@@ -32,6 +42,9 @@
         justify-content: space-between;
         gap: 300px;
         margin-block: 20px;
+        @include m{
+            
+        }
         .plus {
             position: relative;
             display: flex;

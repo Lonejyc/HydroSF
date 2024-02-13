@@ -1,3 +1,9 @@
+@mixin m {
+    @media screen and (max-width: 767.98px) {
+        @content;
+    }
+}
+
 .head {
     display: flex;
     margin-bottom: 128px;
@@ -45,8 +51,15 @@
     justify-content: center;
     margin-inline: 64px;
     gap: 16px;
+    @include m{
+        flex-direction: column;
+        margin-inline: 32px;
+    }
     .left {
         width: 50%;
+        @include m{
+            width: 100%;
+        }
         > img {
             width: 100%;
             object-fit: cover;
@@ -63,6 +76,10 @@
         border-radius: 16px;
         padding: 64px;
         box-sizing: border-box;
+        @include m{
+            width: 100%;
+            padding: 32px;
+        }
         .paragraph {
             font: 400 1rem Lato;
         }

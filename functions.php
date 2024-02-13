@@ -28,7 +28,6 @@ function p($args){
   var_dump($args);
 }
 
-
 function d($args){
   p($args);
   die();
@@ -49,5 +48,3 @@ add_image_size('art-img-max', 1920, 1080, array('center', 'center'));
 add_image_size('art-img-banner', 1312, 302, array('center', 'center'));
 add_image_size('home-background-img', 1440, 600, array('center', 'center'));
 add_image_size('art-loc-img', 640, 1060, array('center', 'center'));
-
-// pas dingue

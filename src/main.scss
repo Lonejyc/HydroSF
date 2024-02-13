@@ -13,6 +13,12 @@
 @import "scss/pages/asso";
 @import "scss/pages/project";
 
+@mixin m {
+  @media screen and (max-width: 767.98px) {
+      @content;
+  }
+}
+
 $primary-color: hsl(206, 79%, 41%);
 $font-color: hsl(0, 0%, 100%);
 
@@ -22,16 +28,28 @@ $font-color: hsl(0, 0%, 100%);
 
 .h1 {
   font: 700 4rem Inter;
+  @include m{
+    font: 700 3rem Inter;
+  }
 }
 
 .h2 {
   font: 600 2rem Inter;
+  @include m{
+    font: 600 1.5rem Inter;
+  }
 }
 
 .h3 {
   font: 500 1.5rem Inter;
+  @include m{
+    font: 500 1.25rem Inter;
+  }
 }
 
 p {
   font: 400 1rem Lato;
+  @include m{
+    font: 400 1.125rem Lato;
+  }
 }
