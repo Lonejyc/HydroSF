@@ -4,7 +4,7 @@
 
     $args = array(
         'post_type' => 'post',
-        'posts_per_page' => -1,
+        'posts_per_page' => 6,
         'orderby' => 'date',
         'order' => 'DESC',
         'paged' => 1
@@ -14,7 +14,7 @@
 
 ?>
 <main>
-    <section class="container-grid">
+    <section class="container-grid publication-list" data-url="<?php echo get_site_url(); ?>">
         <?php foreach ($articles as $article) : ?>
             <?php 
                 $featured_img = get_field('featured_img', $article->ID);
@@ -37,7 +37,7 @@
         <?php endforeach; ?>
     </section>
     <div class="btn_wrapper">
-        <a href="#!" class="round-btn" id="load-more">
+        <a href="#!" class="round-btn load-more">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Plus.svg" alt="Plus">
         </a>
     </div>
