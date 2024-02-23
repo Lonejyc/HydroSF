@@ -14,10 +14,15 @@
         alt="<?php echo $background_img['alt']; ?>"
     >
     <div class="content">
-        <div class="chapo"><?php echo $quote ?></div>
-        <div class="title">
-            <h2 class="h2"><?php echo $location_title ?></h2>
-            <div class="headband"></div>
+        <div class="text-content">
+            <div class="chapo"><?php echo $quote ?></div>
+            <div class="title">
+                <div class="title-content">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Location.svg" alt="Location icon">
+                    <h2 class="h2"><?php echo $location_title ?></h2>
+                </div>
+                <div class="headband"></div>
+            </div>
         </div>
         <img 
             loading="lazy" 

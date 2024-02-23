@@ -1,35 +1,61 @@
 .locate {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
     > img {
         width: 100%;
         height: 550px;
         object-fit: cover;
     }
     .content {
-        position: relative;
-        .chapo {
+        display: flex;
+        justify-content: space-between;
+        .text-content {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: -30%;
-            left: 10%;
-            max-width: 400px;
-            border-radius: 8px;
-            font: italic 400 32px Lato;
-            padding: 84px 40px;
-            background: hsl(0, 0%, 97%);
-            box-sizing: content-box;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-        .title {
-            .headband {
-                margin-top: -20px;
+            flex-direction: column;
+            position: relative;
+            margin-top: -30px;
+            justify-content: space-between;
+            .chapo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 400px;
                 width: 100%;
-                height: 30px;
-                background-color: hsla(206, 79%, 41%, 0.2);
+                border-radius: 8px;
+                font: italic 400 32px Lato;
+                padding: 84px 40px;
+                margin-left: 50%;
+                background: hsl(0, 0%, 97%);
+                box-sizing: content-box;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             }
+            .title {
+                display: grid;
+                width: 150%;
+                margin-bottom: 50px;
+                .title-content {
+                    display: flex;
+                    gap: 20px;
+                    justify-self: end;
+                    margin-right: -10px;
+                    .h2 {
+                        font: 400 32px Lato;
+                        text-transform: uppercase;
+                    }
+                }
+                .headband {
+                    position: absolute;
+                    margin-top: 20px;
+                    width: 150%;
+                    height: 30px;
+                    background-color: hsla(206, 79%, 41%, 0.2);
+                }
+            }
+        }
+        > img {
+            margin-right: 10%;
+            margin-top: 5%;
         }
     }
 }
