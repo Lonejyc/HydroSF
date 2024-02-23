@@ -4,7 +4,10 @@
 
     $args = array(
         'post_type' => 'post',
-        'posts_per_page' => -1
+        'posts_per_page' => -1,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'paged' => 1
     );
     $query = new WP_Query( $args );
     $articles = $query->posts;
@@ -33,6 +36,11 @@
             </article> 
         <?php endforeach; ?>
     </section>
+    <div class="btn_wrapper">
+        <a href="#!" class="round-btn" id="load-more">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Plus.svg" alt="Plus">
+        </a>
+    </div>
 </main>
 <?php
     get_footer();
