@@ -4,7 +4,7 @@
     $var = ($img_size == 'banner') ? 'art-img-banner' : 'art-img-max';
 ?>
 
-<article>
+<article class="img-content">
     <img 
         loading="lazy"
         src="<?php echo ($img['sizes'][$var]); ?>"
