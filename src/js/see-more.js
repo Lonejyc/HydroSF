@@ -1,34 +1,41 @@
 
 
 // // $ = jQuery
-let currentPage = 1;
-document.querySelector('.load-more').addEventListener('click', () => {
-  currentPage++;
+function seeMore() {
+  let currentPage = 1;
+  // check if the load-more button exists
+  if (document.querySelector('.load-more')) {
+    document.querySelector('.load-more').addEventListener('click', () => {
+      currentPage++;
+      
+      const el = document.querySelector('.publication-list');
+      const siteURL = el.dataset.url;
 
-  const el = document.querySelector('.publication-list');
-  const siteURL = el.dataset.url;
+      const form = new FormData();
+      form.append('action', 'weichie_load_more');
+      form.append('paged', currentPage);
+      
+      fetch(`${siteURL}/wp-admin/admin-ajax.php`, {
+        body: form,
+        method: 'POST'
+      }).then((res) => {
+        return res.json();
+      }).then((data) => {
+        const previousHTML = el.innerHTML; // on récupère l'HTML de publication-list existant (les posts)
 
-  const form = new FormData();
-  form.append('action', 'weichie_load_more');
-  form.append('paged', currentPage);
-  
-  fetch(`${siteURL}/wp-admin/admin-ajax.php`, {
-    body: form,
-    method: 'POST'
-  }).then((res) => {
-    return res.json();
-  }).then((data) => {
-    const previousHTML = el.innerHTML; // on récupère l'HTML de publication-list existant (les posts)
+        el.innerHTML = previousHTML + data.html;
 
-    el.innerHTML = previousHTML + data.html;
+        if (currentPage + 1 >= data.max) {
+          document.querySelector('.load-more').style.display = 'none';
+          document.querySelector('.load-more').classList.add('hide');
+        } 
+      })
+      
+    });
+  }
+}
 
-    if (currentPage + 1 >= data.max) {
-      document.querySelector('.load-more').style.display = 'none';
-      document.querySelector('.load-more').classList.add('hide');
-    } 
-  })
-
-});
+seeMore();
 
 
 // $('.load-more').on('click', function() {

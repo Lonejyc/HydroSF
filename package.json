@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "flickity": "^3.0.0",
-    "gsap": "^3.12.4"
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0"
   }
 }

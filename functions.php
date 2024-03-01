@@ -50,7 +50,6 @@ add_image_size('home-background-img', 1440, 600, array('center', 'center'));
 add_image_size('art-loc-img', 640, 1060, array('center', 'center'));
 
 
-
 function weichie_load_more() {
   $ajaxposts = new WP_Query([
     'post_type' => 'post',

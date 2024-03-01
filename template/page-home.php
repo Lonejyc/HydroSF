@@ -2,6 +2,8 @@
     /* Template Name: Accueil */
     get_header();
 
+    $rows = get_field('trail_images_repetor');
+
     $intro_txt = get_field('intro_txt');
     $img_home_asso = get_field('img_home_asso');
     $title_home_asso = get_field('title_home_asso');
@@ -25,7 +27,19 @@
     <section class="head">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Motif-africain.svg" alt="Motif style Africain">
         <div class="container">
-            <div class="imgs-hover"></div>
+            <div class="imgs_hover">
+            <?php foreach($rows as $row) : ?>
+                <?php 
+                    $trail_img = $row['trail_image'];
+                ?>
+                <img 
+                    loading="lazy" 
+                    src="<?php echo ($trail_img['sizes']['home-img']); ?>"
+                    alt="<?php echo $trail_img['alt']; ?>"
+                    class="img_hover"
+                >
+            <?php endforeach; ?>
+            </div>
             <p class="description"><?php echo $intro_txt ?></p>
             <div class="img">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Droplet.svg" alt="Goutte d'eau">

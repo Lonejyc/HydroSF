@@ -7,6 +7,9 @@ import './js/burger'
 import './js/see-more'
 import Flickity from 'flickity'
 import 'flickity/dist/flickity.min.css'
+import imagesLoaded from 'imagesloaded';
+import gsap from 'gsap';
+import './js/trail'
 import Router from './utils/Router'
 
 // Small router inspired from Sage framework, which use body class from WordPress
