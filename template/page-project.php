@@ -22,9 +22,9 @@
     ]);
 
 
-    add_filter('the_title', function($post_title, $post_id) {
-        return '- ' . $post_title . ' -';
-    }, 10, 2);
+    // add_filter('the_title', function($post_title, $post_id) {
+    //     return '- ' . $post_title . ' -';
+    // }, 10, 2);
 
     // return apply_filters( 'the_title', $post_title, $post_id );
 ?>

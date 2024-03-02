@@ -1,5 +1,6 @@
 import { gsap } from "gsap/all";
 {
+	if (document.querySelector(".imgs_hover")) {
 	const docEl = document.documentElement;
 	const body = document.body;
 
@@ -179,4 +180,6 @@ import { gsap } from "gsap/all";
 	  }).catch((err) => {
 		console.error("Erreur lors du préchargement des images :", err);
 	  });
+
+	}
 }

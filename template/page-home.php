@@ -21,6 +21,13 @@
     ];
     $query = new WP_Query( $args );
     $articles = $query->posts;
+
+    $args2 = [
+        'post_type' => 'post',
+        'posts_per_page' => 3
+    ];
+    $query2 = new WP_Query( $args2 );
+    $articles2 = $query2->posts;
 ?>
 
 <main>
@@ -104,6 +111,31 @@
                         <h3 class="h3"><?php echo get_the_title($article->ID); ?></h3>
                         <div class="paragraph"><?php echo $short_description; ?></div>
                         <a href="<?php echo get_permalink($article->ID); ?>" class="btn outline-btn">EN SAVOIR PLUS</a>
+                    </div>
+                </article> 
+            <?php endforeach; ?>
+        </div>
+        <div class="now_content projects-show">
+        <?php foreach ($articles2 as $article2) : ?>
+                <?php 
+                    $featured_img = get_field('featured_img', $article2->ID);
+                    $short_description = get_field('short_description', $article2->ID);
+                ?>
+                <article class="project-show art">
+                    <img 
+                        class="img"
+                        loading="lazy"
+                        src="<?php echo ($featured_img['sizes']['art-img']); ?>"
+                        width="<?php echo ($featured_img['sizes']['art-img-width']); ?>"
+                        height="<?php echo ($featured_img['sizes']['art-img-height']); ?>"
+                        alt="<?php echo $featured_img['alt']; ?>"
+                    >
+                    <div class="content">
+                        <h3 class="h3"><?php echo get_the_title($article2->ID); ?></h3>
+                        <div class="paragraph"><?php echo $short_description; ?></div>
+                        <div class="buttons">
+                            <a href="<?php echo get_permalink($article2->ID); ?>" class="btn outline-btn">EN SAVOIR PLUS</a>
+                        </div>
                     </div>
                 </article> 
             <?php endforeach; ?>

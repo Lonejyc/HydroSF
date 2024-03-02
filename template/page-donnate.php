@@ -59,7 +59,7 @@
             <div class="right">
                 <h2 class="h2"><?php echo $title; ?></h2>
                 <div class="paragraph"><?php echo $paragraph; ?></div>
-                <a href="<?php echo $link; ?>" class="btn outline-btn">J'ADHÈRE À HSF</a>
+                <a href="<?php echo $link; ?>" class="btn outline-btn" target="_blank">J'ADHÈRE À HSF</a>
             </div>
         </article>
     </section>

@@ -48,3 +48,13 @@
         }
     }
 }
+
+.art {
+    display: flex;
+    flex-direction: column;
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

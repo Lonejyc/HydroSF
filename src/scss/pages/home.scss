@@ -4,6 +4,12 @@
     }
 }
 
+@mixin min {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
 .head {
     display: flex;
     margin-bottom: 128px;
@@ -41,6 +47,9 @@
         p,
         .img > img {
             padding-inline: 64px;
+            @include m{
+                padding-inline: 16px;
+            }
         }
         > p {
             font: 400 2rem Inter;
@@ -137,6 +146,9 @@
 
 .main-carousel {
     margin-block: 50px;
+    @include m{
+        display: none;
+    }
     .carousel-cell {
         display: flex;
         margin-right: 50px;
@@ -180,6 +192,15 @@
             box-shadow: none;
         }
     }    
+}
+
+.now_content.projects-show {
+    display: none;
+    @include m{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;    
+    }
 }
 
 .needu{
