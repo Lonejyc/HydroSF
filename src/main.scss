@@ -21,6 +21,12 @@
   }
 }
 
+@mixin min {
+  @media screen and (min-width: 768px) {
+      @content;
+  }
+}
+
 $primary-color: hsl(206, 79%, 41%);
 $font-color: hsl(0, 0%, 100%);
 

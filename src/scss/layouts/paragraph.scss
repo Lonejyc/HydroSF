@@ -1,4 +1,7 @@
 .paragraph-content {
     max-width: 70%;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }

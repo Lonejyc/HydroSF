@@ -1,9 +1,8 @@
 $primary-color: hsl(206, 79%, 41%);
-#wpadminbar {
-    display: none;
-}
-html {
-    margin-top: 0px !important;
+@mixin m {
+    @media screen and (max-width: 767.98px) {
+        @content;
+    }
 }
 
 header{
@@ -84,6 +83,10 @@ header{
     margin-bottom: 128px;
     img {
         width: 100%;
+        @include m {
+            width: auto;
+            height: 200%;
+        }
     }
     .breadcrumb {
         display: flex;
@@ -94,6 +97,9 @@ header{
         padding-left: 10%;
         font: 400 0.75rem Lato;
         color: $primary-color;
+        @include m {
+            font: 400 1rem Lato;
+        }
         a {
             text-decoration: none;
             color: $primary-color;
