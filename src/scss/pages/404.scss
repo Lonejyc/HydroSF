@@ -1,0 +1,65 @@
+.error-404 {
+    margin: 100px 0;
+    .motif {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 128px;
+    }
+    h2 {
+        position: relative;
+        text-align: left;
+        padding-left: 73px;
+        color: #000;
+        font-family: Lato;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 32px */
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        @media screen and (max-width: 768px){
+            font-size: 24px;
+            text-align: center;
+        }
+        &:before {
+            content: "";
+            width: 55%;
+            height: 28px;
+            background-color: rgba(22, 116, 186, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            @media screen and (max-width: 768px){
+                width: 80%;
+            }
+        }
+    }
+    .h1-404 {
+        color: #FFF;
+        text-shadow: -1px -1px 0 #1674BA, 1px -1px 0 #1674BA, -1px 1px 0 #1674BA, 1px 1px 0 #1674BA;
+        font-family: Inter;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 20px;
+        margin-left: 82px;
+        width: 585px;
+        @media screen and (max-width: 768px){
+            font-size: 64px;
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .animation {
+        display: flex;
+        overflow: hidden;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+        }
+        .gif {
+            scale: 210%;
+        }
+    }
+}
