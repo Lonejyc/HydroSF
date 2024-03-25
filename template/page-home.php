@@ -144,7 +144,7 @@
     <section class="needu" style="background-image: url(<?php echo ($needu_background_img['sizes']['home-background-img']); ?>)">
         <h1 class="h1">ON A BESOIN DE VOUS !</h1>
         <div class="button">
-            <a href="<?php echo get_page_link(ID_PAGE_DON); ?>" class="btn">FAIRE UN DON</a>
+            <a href="<?php echo get_page_link(ID_PAGE_DON); ?>" class="special-btn">FAIRE UN DON</a>
         </div>
     </section>
 </main>

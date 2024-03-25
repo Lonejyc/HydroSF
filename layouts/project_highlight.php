@@ -25,7 +25,7 @@
         <div class="paragraph"><?php echo $description; ?></div>
         <div class="button">
             <a href="<?php echo $project_link; ?>" class="btn outline-btn">EN SAVOIR PLUS</a>
-            <a href="<?php echo $helloasso_link; ?>" class="btn">SOUTENIR <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Heart.svg" alt="Coeur"></a>
+            <a href="<?php echo $helloasso_link; ?>" class="btn special-btn">SOUTENIR <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Heart.svg" alt="Coeur"></a>
         </div>
     </div>
     <?php

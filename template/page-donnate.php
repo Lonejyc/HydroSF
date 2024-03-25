@@ -38,7 +38,7 @@
                         <div class="paragraph"><?php echo $short_description; ?></div>
                         <div class="buttons">
                             <a href="<?php echo get_permalink($p_article->ID); ?>" class="btn outline-btn">EN SAVOIR PLUS</a>
-                            <a href="<?php echo $helloasso_link; ?>" class="btn">SOUTENIR <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Heart.svg" alt="Coeur"></a>
+                            <a href="<?php echo $helloasso_link; ?>" class="btn special-btn">SOUTENIR <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Heart.svg" alt="Coeur"></a>
                         </div>
                     </div>
                 </article> 
