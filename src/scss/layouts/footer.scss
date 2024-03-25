@@ -76,6 +76,9 @@ footer {
                     color: black;
                     border: none;
                     font: 500 14px Inter;
+                    @media screen and (max-width: 767.98px) {
+                        width: 200px;
+                    }
                 }
             }
             button {
@@ -103,13 +106,16 @@ footer {
 }
 
 .copyright {
-    font: 300 10px Inter ;
+    font: 300 10px Inter;
     color: white;
 }
 
 .h4 {
-    font: 400 20px Inter ;
+    font: 400 20px Inter;
     color: white;
+    @media screen and (max-width: 767.98px){
+        font: 400 16px Inter;
+    }
 }
 
 @media screen and (max-width: 767.98px) {

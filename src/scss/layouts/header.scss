@@ -21,6 +21,9 @@ header{
         width: 100%;
         height: 120px;
         gap: 38px;
+        @include m {
+            gap: 25%;
+        }
         .logo {
             position: relative;
             width: 148px;
@@ -34,7 +37,7 @@ header{
         .medias {
             gap: 48px;
             @include m{
-                gap: 24px;
+                display: none;
             }
             a {
                 width: 30px;
@@ -261,6 +264,7 @@ header{
             background-color: $primary-color;
             li > a {
                 color: white;
+                text-align: center;
             }
             li:nth-child(5) {
                 > a {
@@ -281,4 +285,7 @@ header{
             }
         }
     }
+}
+body.overflow-hidden {
+    overflow: hidden;
 }
