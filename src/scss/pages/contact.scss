@@ -9,6 +9,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .result {
+        font-weight: bold;
+        margin-bottom: 32px;
+        color: $primary;
+    }
     .mail-info {
         display: flex;
         gap: 20px;
