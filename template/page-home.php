@@ -32,7 +32,7 @@
 
 <main>
     <section class="head">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Motif-africain.svg" alt="Motif style Africain">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Motif-Africain.svg" alt="Motif style Africain">
         <div class="container">
             <div class="imgs_hover">
             <?php foreach($rows as $row) : ?>

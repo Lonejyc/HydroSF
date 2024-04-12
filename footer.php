@@ -18,16 +18,16 @@
           </form>
       </div>
       <div class="footer-socials">
-        <a href="https://www.facebook.com/hydrauliquesansfrontieres/" target="_blank" class="media">
+        <a href="https://www.facebook.com/hydrauliquesansfrontieres" target="_blank" class="media">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Facebook.svg" alt="Facebook">
         </a>
-        <a href="https://www.linkedin.com/company/hydraulique-sans-fronti-res/" target="_blank" class="media">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Linkedin.svg" alt="Linkedin">
+        <a href="https://www.linkedin.com/company/hydraulique-sans-frontieres-ong/" target="_blank" class="media">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/LinkedIn.svg" alt="Linkedin">
         </a>
-        <a href="instagram/HSF" target="_blank" class="media">
+        <a href="https://www.instagram.com/hydraulique_sans_frontieres/" target="_blank" class="media">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Instagram.svg" alt="Instagram">
         </a>
-        <a href="https://www.youtube.com/channel/UCZQX6Z6Z2X6Z6Z2X6Z6Z2Xw" target="_blank" class="media">
+        <a href="https://www.youtube.com/@hydrauliquesansfrontieres467" target="_blank" class="media">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Youtube.svg" alt="Youtube">
         </a>
       </div>
